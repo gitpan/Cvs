@@ -1,4 +1,5 @@
 lib/Cvs/Command/Checkout.pm
+lib/Cvs/Command/Commit.pm
 lib/Cvs/Command/Base.pm
 lib/Cvs/Command/Login.pm
 lib/Cvs/Command/Diff.pm
@@ -11,6 +12,7 @@ lib/Cvs/Command/Tag.pm
 lib/Cvs/Command/Update.pm
 lib/Cvs/Cvsroot.pm
 lib/Cvs/Result/Checkout.pm
+lib/Cvs/Result/Commit.pm
 lib/Cvs/Result/Base.pm
 lib/Cvs/Result/DiffItem.pm
 lib/Cvs/Result/DiffList.pm
@@ -29,6 +31,7 @@ MANIFEST
 Makefile.PL
 README
 t/00checkout.t
+t/05commit.t
 t/10status.t
 t/20tag.t
 t/21rtag.t
@@ -60,3 +63,4 @@ cvs/CVSROOT/val-tags
 cvs/CVSROOT/verifymsg
 cvs/CVSROOT/verifymsg,v
 cvs/test/test.txt,v
+META.yml                                 Module meta-data (added by MakeMaker)

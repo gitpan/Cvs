@@ -107,7 +107,7 @@ sub init
      qr/^\s+Working revision:\s+([\d\.]+|No entry for .*)/, sub
      {
          my($match) = @_;
-         $result->working_revision($match->[1]) unless $match->[1] =~/\D/;
+         $result->working_revision($match->[1]) if $match->[1] =~ /^[\d.]+$/;
      }
     );
     $main->push_handler
@@ -115,7 +115,7 @@ sub init
      qr/^\s+Repository revision:\s+([\d\.]+|No revision control file)/, sub
      {
          my($match) = @_;
-         $result->repository_revision($match->[1]) unless $match->[1] =~ /\D/;
+         $result->repository_revision($match->[1]) if $match->[1] =~ /^[\d.]+$/;
      }
     );
     $main->push_handler

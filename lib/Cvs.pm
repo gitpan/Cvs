@@ -9,7 +9,7 @@ use Cvs::Cvsroot;
 use base qw(Class::Accessor);
 use vars qw($AUTOLOAD %LOADED);
 
-$Cvs::VERSION = 0.01;
+$Cvs::VERSION = 0.03;
 
 Cvs->mk_accessors(qw(debug pwd workdir));
 

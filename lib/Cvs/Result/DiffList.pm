@@ -108,6 +108,19 @@ sub last
 
 =pod
 
+=head1 count
+
+=cut
+
+sub count
+{
+    my($self) = @_;
+    return scalar @{$self->{items}};
+}
+
+
+=pod
+
 =head1 first
 
 =cut

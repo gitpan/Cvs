@@ -1,4 +1,4 @@
-Cvs version 0.01
+Cvs version 0.03
 ================
 
 bla bla
@@ -16,7 +16,7 @@ DEPENDENCIES
 
 This module requires these other modules and libraries:
 
-IPC::Run, Class::Accessor, FileHandle, File::Temp...
+IO::Pty, IPC::Run, Class::Accessor, FileHandle, File::Temp...
 
 NAME
     Cvs - Object oriented interface to the CVS command

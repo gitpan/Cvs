@@ -144,7 +144,8 @@ sub run
             $line =~ s/\n+/\n/g;
             if($debug)
             {
-                if($line =~ /^(?: |S)-> / or $debugline eq 'unterminated')
+                if($line =~ /^(?: |S)-> / or 
+		  (defined $debugline and $debugline eq 'unterminated'))
                 {
                     print STDERR $line;
                     # if the cvs debug line is truncated, try to not
