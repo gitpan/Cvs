@@ -1,4 +1,5 @@
 use Test;
+use Cwd;
 use File::Path;
 
 plan test => 4;
@@ -6,11 +7,14 @@ plan test => 4;
 use Cvs;
 ok(1);
 
-my $cvs = new Cvs 'cvs-test';
+my $cvsroot = cwd().'/cvs';
+my $cvs = new Cvs('cvs-test', cvsroot => $cvsroot);
 ok($cvs);
 
-open(FILE, "> $ENV{PWD}/cvs-test/test.txt")
-    or die "Cannot open file `$ENV{PWD}/cvs-test/test.txt': $!";
+$cvs->checkout('test');
+
+open(FILE, "> ./cvs-test/test.txt")
+    or die "Cannot open file `./cvs-test/test.txt': $!";
 print FILE "test\n";
 close(FILE);
 

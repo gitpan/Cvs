@@ -3,6 +3,7 @@ lib/Cvs/Command/Commit.pm
 lib/Cvs/Command/Base.pm
 lib/Cvs/Command/Login.pm
 lib/Cvs/Command/Diff.pm
+lib/Cvs/Command/Export.pm
 lib/Cvs/Command/Logout.pm
 lib/Cvs/Command/Rdiff.pm
 lib/Cvs/Command/Release.pm
@@ -16,6 +17,7 @@ lib/Cvs/Result/Commit.pm
 lib/Cvs/Result/Base.pm
 lib/Cvs/Result/DiffItem.pm
 lib/Cvs/Result/DiffList.pm
+lib/Cvs/Result/Export.pm
 lib/Cvs/Result/Login.pm
 lib/Cvs/Result/Logout.pm
 lib/Cvs/Result/RdiffItem.pm
@@ -37,6 +39,7 @@ t/20tag.t
 t/21rtag.t
 t/30update.t
 t/40diff.t
+t/50export.t
 t/90release.t
 cvs/CVSROOT/checkoutlist
 cvs/CVSROOT/checkoutlist,v

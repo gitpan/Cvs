@@ -9,7 +9,7 @@ use Cvs::Cvsroot;
 use base qw(Class::Accessor);
 use vars qw($AUTOLOAD %LOADED);
 
-$Cvs::VERSION = 0.05;
+$Cvs::VERSION = 0.06;
 
 Cvs->mk_accessors(qw(debug pwd workdir));
 
@@ -60,7 +60,7 @@ bla bla
     my $obj = new Cvs cvsroot => ":pserver:user\@host:/path/to/cvs";
 
 Create a new Cvs object for the repository given in argument. Note
-that the working directory doesn't need to already exists.
+that the working directory doesn't need to already exist.
 
 Allowed parameters are:
 
@@ -211,6 +211,17 @@ to false.
 =back
 
 L<Cvs::Result::Release>
+
+=head2 export
+
+    Cvs::Result::Export = $obj->export("module", {key => "value"});
+
+Checkout the module "module" in the repository (the one that served to
+create the Cvs object) from the cvsroot given in parameter, but without
+the CVS administrative directories. 
+
+Allowed parameters are the same as for checkout.  However, one of the 
+options 'revision' or 'date' must be specified.
 
 =head1 OTHERS METHODS
 
