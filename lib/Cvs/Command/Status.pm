@@ -33,7 +33,7 @@ sub init
 
     $tags->push_handler
     (
-     qr/cvs status: Examining (.*)\n$/, sub
+     qr/cvs (?:status|server): Examining (.*)\n$/, sub
      {
          $current_directory = shift->[1];
      }

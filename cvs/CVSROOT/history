@@ -291,3 +291,12 @@ U40570169|rs|~/devel/Cvs/cvs-*0|test|1.14|test.txt
 E4057016a|rs|~/devel/Cvs/cvs-test.import|test|2004.03.16.13.30.18|cvs-test.import
 O4057016b|rs|~/devel/Cvs/cvs-*0|test||cvs-test
 F4057016b|rs|~/devel/Cvs/cvs-test|||cvs-test
+O41b7195a|rs|~/devel/Cvs/cvs-*0|test||cvs-test
+M41b7195b|rs|~/devel/Cvs/cvs-*0|test|1.15|test.txt
+T41b7195d|rs|~/devel/Cvs|A|test_1423|test
+T41b7195d|rs|~/devel/Cvs|D|test_1423|test
+U41b7195d|rs|~/devel/Cvs/cvs-*0|test|1.15|test.txt
+U41b7195e|rs|~/devel/Cvs/cvs-*0|test|1.15|test.txt
+E41b7195f|rs|~/devel/Cvs/cvs-test.export|test|2004.12.08.15.10.23|cvs-test.export
+O41b71960|rs|~/devel/Cvs/cvs-*0|test||cvs-test
+F41b71960|rs|~/devel/Cvs/cvs-test|||cvs-test

@@ -27,7 +27,7 @@ sub init
     $self->command('release');
     $self->push_arg('-d')
       if $self->param->{delete_after};
-    $self->push_arg(@modules || $self->cvs->workdir());
+    $self->push_arg(@modules ? @modules : $self->cvs->workdir());
     $self->go_into_workdir(0);
 
     my $main = $self->new_context();

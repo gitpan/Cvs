@@ -1,4 +1,4 @@
-head	1.14;
+head	1.15;
 access;
 symbols
 	start:1.1.1.1
@@ -6,6 +6,11 @@ symbols
 locks; strict;
 comment	@# @;
 
+
+1.15
+date	2004.12.08.15.10.19;	author rs;	state Exp;
+branches;
+next	1.14;
 
 1.14
 date	2004.03.16.13.30.13;	author rs;	state Exp;
@@ -83,12 +88,22 @@ desc
 @@
 
 
+1.15
+log
+@test commit
+@
+text
+@1403 Cvs commit test@
+
+
 1.14
 log
 @test commit
 @
 text
-@19667 Cvs commit test@
+@d1 1
+a1 1
+19667 Cvs commit test@
 
 
 1.13

@@ -231,7 +231,7 @@ sub run
         }
     }
 
-    my $rv = $h->finish();
+    my $rv = $h->finish() || $?;
 
     #
     # Restoring/cleaning-up environment

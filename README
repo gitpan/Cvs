@@ -1,7 +1,8 @@
-Cvs version 0.06
+Cvs version 0.07
 ================
 
-bla bla
+This module is a wrapper around the cvs command with an object oriented
+interface.
 
 INSTALLATION
 
